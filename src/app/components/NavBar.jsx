@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function NavBar() {
@@ -5,9 +6,9 @@ export default function NavBar() {
     <div>
       <nav className='flex justify-center'>
           <ul className='flex justify-between w-1/2'>
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
+            <Link href={'/'}>Home</Link>
+            <Link href={'/services'}>Services</Link>
+            <Link href={"/about"}>About</Link>
           </ul>
         </nav>
     </div>
